@@ -31,6 +31,8 @@ Makefile*
 *build-*
 *.qm
 *.prl
+build-*/
+build/
 
 # Qt unit tests
 target_wrapper.*
@@ -52,3 +54,30 @@ compile_commands.json
 *creator.user*
 
 *_qmlcache.qrc
+
+# Archivos generados por Qt al compilar
+Makefile*
+*.o
+*.obj
+*.so
+*.a
+*.dll
+*.dylib
+
+# Archivos temporales de IDE y del sistema
+*.log
+*.swp
+*.tmp
+*.bak
+*~
+
+# Carpeta de salida binaria
+bin/
+release/
+debug/
+
+# Archivos generados por CMake si usas CMake en algún momento
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
